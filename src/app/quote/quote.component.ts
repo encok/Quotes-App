@@ -17,6 +17,9 @@ export class QuoteComponent implements OnInit {
     new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci'),
 
   ];
+  toggleDetail(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit(): void {

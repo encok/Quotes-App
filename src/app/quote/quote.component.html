@@ -2,11 +2,14 @@
     <h1>Famous Quotes</h1>
     <hr>
      <ul>
-        <li *ngFor='let quote of quotes'>
-          {{quote.topic}}
-          <app-quote-details [quote]='quote'></app-quote-details>
-          {{quote.name}}
+        <div *ngFor='let quote of quotes; let i = index'>
           
-        </li>
+          <li>{{quote.topic}}</li>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+          <app-quote-details [quote]='quote'></app-quote-details>
+          <li>{{quote.name}}</li>
+          
+        </div>
+
     </ul>
 </div>
