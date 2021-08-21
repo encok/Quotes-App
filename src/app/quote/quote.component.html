@@ -1,15 +1,11 @@
-<div>
-    <h1>Famous Quotes</h1>
-    <hr>
-     <ul>
-        <div *ngFor='let quote of quotes; let i = index'>
-          
-          <li>{{quote.topic}}</li>
-          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
-          <app-quote-details [quote]='quote'></app-quote-details>
-          <li>{{quote.name}}</li>
-          
-        </div>
+<h1>Famous Quotes</h1>
+<hr>
+<ul>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <li>{{quote.name}}</li>
+    <button (click)='toggleDetail(i)'>Toggle Details</button>
+    <app-quote-details *ngIf='' [quote]='quote'>
 
-    </ul>
-</div>
+    </app-quote-details>
+  </div>
+</ul>
