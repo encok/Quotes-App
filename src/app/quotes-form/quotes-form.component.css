@@ -25,4 +25,9 @@
     font-family: 'Architects Daughter', cursive;
     margin-bottom: 5%;
   }
-  
+.form-group1 label{
+  margin-right: 15px;
+} 
+.form-group1{
+  margin: 20px;
+}

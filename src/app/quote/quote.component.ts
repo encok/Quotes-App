@@ -10,11 +10,11 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   quotes: Quote[]= [
     new Quote('hope and will-power','No matter where you are from your dreams are valid','Lupita Nyongo','Benson Olerina',new Date(2020,3,17),0,0),
-    new Quote('Creativity' ,'Change the world by being yourself',' T.S Eliot' ,'Edward Muthee',new Date(2019,4,9),0,0),
-    new Quote('Beginnings', 'Every moment is a fresh beginning.','Mark Twain','Allan Nyansimera',new Date(2020,5,17),0,0),
-    new Quote('Happiness' ,'Never regret anything that made you smile.','Amy Poehler','enock kipronoh',new Date(2019,10,17),0,0),
-    new Quote('Greatness' ,'No human is limited. ', 'Eliud Kipchoge','enock',new Date(2020,6,23),0,0),
-    new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci','Vitalis Nanok',new Date(2020,11,2),0,0),
+    new Quote('Creativity' ,'Change the world by being yourself because you are the one',' T.S Eliot' ,'Edward Muthee',new Date(2019,4,9),0,0),
+    new Quote('Beginnings', 'Every moment is a fresh beginning. Adore the small beginnings','Mark Twain','Allan Nyansimera',new Date(2020,5,17),0,0),
+    new Quote('Happiness' ,'Never regret anything that made you smile.Give it its worth .','Amy Poehler','enock kipronoh',new Date(2019,10,17),0,0),
+    new Quote('Greatness' ,'No human is limited. No human is limited No human is limited ', 'Eliud Kipchoge','enock',new Date(2020,6,23),0,0),
+    new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication. You don.t have' ,'Leonardo da Vinci','Vitalis Nanok',new Date(2020,11,2),0,0),
 
   ];
   addQuote(quote){

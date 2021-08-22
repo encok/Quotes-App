@@ -1,0 +1,40 @@
+#delete{
+    font-size: 20px;
+    margin-right: 2%;
+    padding: 20px;
+  }
+  #del{
+    float:right;
+  }
+  #like{
+    font-size: 16px;
+    padding: 20px;
+  }
+  #dislike{
+    font-size: 16px;
+    padding: 20px;
+  }
+  .hate{
+    margin-left: 10px;
+    background-color: brown;
+    color: white;
+  }
+  hr{
+    background-color: darkcyan;
+  }
+  #buttons{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 10px;
+  }
+  #when{
+    float:right;
+    font-family: 'Handlee', cursive;
+  }
+  .btn{
+    margin: 6px;
+  }
+  h6{
+    margin: 20px;
+  }
+  
