@@ -4,9 +4,9 @@
 //     name: string;
 // }
 export class Quote {
-    showDescription: boolean;
-    constructor(public topic:string, public description: string, public name:string){
-        this.showDescription=false
+    showAuthor: boolean;
+    constructor(public topic:string, public description: string, public name:string,public author:string){
+        this.showAuthor=false
     }
-
+    // public author:string, public datePosted: Date,public likes:number, public dislikes:number
 }

@@ -9,17 +9,18 @@ import {Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[]= [
-    new Quote('hope and will-power','No matter where you are from your dreams are valid','Lupita Nyongo'),
-    new Quote('Creativity' ,'Change the world by being yourself',' T.S Eliot' ),
-    new Quote('Beginnings', 'Every moment is a fresh beginning.','Mark Twain'),
-    new Quote('Happiness' ,'Never regret anything that made you smile.','Amy Poehler'),
-    new Quote('Greatness' ,'No human is limited. ', 'Eliud Kipchoge',),
-    new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci'),
+    new Quote('hope and will-power','No matter where you are from your dreams are valid','Lupita Nyongo','enock'),
+    new Quote('Creativity' ,'Change the world by being yourself',' T.S Eliot' ,'enock'),
+    new Quote('Beginnings', 'Every moment is a fresh beginning.','Mark Twain','enock'),
+    new Quote('Happiness' ,'Never regret anything that made you smile.','Amy Poehler','enock'),
+    new Quote('Greatness' ,'No human is limited. ', 'Eliud Kipchoge','enock'),
+    new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci','enock'),
 
   ];
   toggleDetail(index){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor ;
   }
+ 
   constructor() { }
 
   ngOnInit(): void {
