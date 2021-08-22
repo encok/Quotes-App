@@ -1,13 +1,26 @@
+<div class="container">
 <h1>Famous Quotes</h1>
 <hr>
-<ul>
+
+<div class="row">
+  <div class="col-md-6">
   <div *ngFor='let quote of quotes;let i = index'>
-    <p>posted on {{quote.datePosted|date}}</p>
+    <div>
+    <h5>posted on {{quote.datePosted|date}}</h5>
    <p> {{quote.topic}} <button (click)='toggleDetail(i)' class="btn btn-info btn-sm">Show More</button></p>
+    </div>
+    <div>
     <app-quote-details *ngIf='quote.showAuthor' [quote]='quote' (isRead)='quoteDelete($event,i)'></app-quote-details>
-      
-   
+    </div>
     <p>{{quote.description}}</p>
     <p>{{quote.name}}</p>
+    </div>
+    </div>
+    <div class="col-sm-3">
+      <app-quotes-form (add)="addedQuote($event)"></app-quotes-form>
+    </div>
+   
+
   </div>
-</ul>
+
+</div>
