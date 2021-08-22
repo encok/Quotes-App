@@ -17,9 +17,9 @@ export class QuoteComponent implements OnInit {
     new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci','enock',new Date(2020,11,2)),
 
   ];
-  addedQuote(quote){
-    let arraysize = this.quotes.length;
-    quote.id = arraysize+1;
+  addQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
