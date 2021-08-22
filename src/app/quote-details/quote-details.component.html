@@ -2,12 +2,16 @@
   {{ quote.author }}
   <span id="when">Posted: {{ quote.datePosted | datePipe }} days ago.</span>
 </h4>
-<button class="btn btn-sm btn-success" (click)="upvote()">
+<button class="btn btn-sm btn-success" (click)="upvote()">likes
   {{ quote.likes }} <i class="fa fa-thumbs-up" id="like"></i>
 </button>
-<button class="btn btn-sm hate" id="hate" (click)="downvote()">
+
+
+<button class="btn btn-sm hate" id="hate" (click)="downvote()">dislikes
   {{ quote.dislikes }} <i class="fa fa-thumbs-down" id="dislike"></i>
 </button>
+
+
 <button class="btn btn-sm btn-danger" id="del" (click)="deleteQuote(true)">
   Delete<i class="fa fa-trash" id="delete"></i>
 </button>
