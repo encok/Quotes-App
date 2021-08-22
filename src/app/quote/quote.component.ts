@@ -17,6 +17,17 @@ export class QuoteComponent implements OnInit {
     new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci','enock',new Date(2020,11,2)),
 
   ];
+
+  quoteDelete(isRead, index){
+    if (isRead) {
+      let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+      if(toDelete){
+        this.quotes.splice(index,1);
+      }
+      
+    }
+  }
+  
   toggleDetail(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor ;
   }
