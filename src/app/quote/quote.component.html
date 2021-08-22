@@ -3,7 +3,7 @@
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
     <p>posted on {{quote.datePosted|date}}</p>
-   <p> {{quote.topic}} <button (click)='toggleDetail(i)'>Show More</button></p>
+   <p> {{quote.topic}} <button (click)='toggleDetail(i)' class="btn btn-info btn-sm">Show More</button></p>
     <app-quote-details *ngIf='quote.showAuthor' [quote]='quote' (isRead)='quoteDelete($event,i)'></app-quote-details>
       
    
