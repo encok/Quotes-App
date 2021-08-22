@@ -9,12 +9,12 @@ import {Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[]= [
-    new Quote('hope and will-power','No matter where you are from your dreams are valid','Lupita Nyongo','enock'),
-    new Quote('Creativity' ,'Change the world by being yourself',' T.S Eliot' ,'enock'),
-    new Quote('Beginnings', 'Every moment is a fresh beginning.','Mark Twain','enock'),
-    new Quote('Happiness' ,'Never regret anything that made you smile.','Amy Poehler','enock'),
-    new Quote('Greatness' ,'No human is limited. ', 'Eliud Kipchoge','enock'),
-    new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci','enock'),
+    new Quote('hope and will-power','No matter where you are from your dreams are valid','Lupita Nyongo','enock',new Date(2020,3,17)),
+    new Quote('Creativity' ,'Change the world by being yourself',' T.S Eliot' ,'enock',new Date(2019,4,9)),
+    new Quote('Beginnings', 'Every moment is a fresh beginning.','Mark Twain','enock',new Date(2020,5,17)),
+    new Quote('Happiness' ,'Never regret anything that made you smile.','Amy Poehler','enock',new Date(2019,10,17)),
+    new Quote('Greatness' ,'No human is limited. ', 'Eliud Kipchoge','enock',new Date(2020,6,23)),
+    new Quote('Forgive Yourself' ,'Simplicity is the ultimate sophistication.' ,'Leonardo da Vinci','enock',new Date(2020,11,2)),
 
   ];
   toggleDetail(index){
